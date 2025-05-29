@@ -1,9 +1,13 @@
-class No {
-    String valor;
-    No esquerda, direita;
+public class No {
+    int valor;
+    No esquerda;
+    No direita;
+    int fatorBalanceamento;
 
-    public No(String valor) {
+    public No(int valor) {
         this.valor = valor;
-        esquerda = direita = null;
+        this.esquerda = null;
+        this.direita = null;
+        this.fatorBalanceamento = 0;
     }
 }
